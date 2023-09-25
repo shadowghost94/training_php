@@ -15,6 +15,7 @@
             
     ?>
     <b>Vous semblez utiliser internet explorer</b>
+    
     <?php
         }elseif(preg_match("/Firefox/i",$AGENT)){
     ?>
