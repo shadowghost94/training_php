@@ -12,7 +12,7 @@
 
     echo "Exemple de récupération de \$_SERVER grace à la fonction getenv"."<br>";
     function infos(){
-        $env=array('remote_addr',/*'http_accept_language',*/'http_host',
+        $env=array('remote_addr','http_accept_language','http_host',
         'http_user_agent','script_filename','server_addr','server_name',
         'server_signature','server_software','request_method','query_string',
     'request_uri','script_name');
@@ -24,7 +24,7 @@
             $retour[$clef]=getenv($clef);
             return $retour;
         }
-        }
+    }
         echo ('Voici les infos disponible: </br>');
         $tab= infos();
         foreach($tab as $clef=>$val){
